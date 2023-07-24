@@ -32,3 +32,7 @@ body {
   width: 92%;
   margin: 0 auto;
 }
+
+.flex {
+  display: flex;
+}

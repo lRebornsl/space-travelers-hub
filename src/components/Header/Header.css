@@ -31,6 +31,10 @@ h1 {
   height: 5rem;
 }
 
+.nav_profile {
+  margin: 0 1.6rem;
+}
+
 .nav_profile.active,
 .nav_profile.active:visited {
   text-decoration: underline;
