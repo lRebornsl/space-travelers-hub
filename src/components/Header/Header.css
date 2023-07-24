@@ -2,24 +2,36 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid black;
-  padding: 1rem 1rem 2rem 1rem;
+  border-bottom: 1px solid #d1d1d1;
+  padding: 2rem 2rem;
 }
 
-header a {
+a {
   text-decoration: none;
+  color: #4ba0ff;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-weight: normal;
 }
 
 #logo {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #000;
-  font-size: 2rem;
-  font-weight: 600;
+  color: black;
 }
 
 #logo img {
-  width: 40px;
-  height: 40px;
+  width: 5rem;
+  height: 5rem;
+}
+
+.nav_profile.active,
+.nav_profile.active:visited {
+  text-decoration: underline;
 }
