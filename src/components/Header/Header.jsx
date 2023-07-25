@@ -6,13 +6,15 @@ const Header = () => {
   return (
     <header className='container'>
       <div>
-        <NavLink to="/" id="logo">
+        <NavLink to="/rockets" id="logo">
           <img src={logo} alt="logo" />
           <h1>Space Travelers&apos; Hub</h1>
         </NavLink>
       </div>
       <nav>
         <ul className='flex'>
+          <li><NavLink to="/rockets" className="nav_profile">Rockets</NavLink></li>
+          <hr className='nav_line'></hr>
           <li><NavLink to="/missions" className="nav_profile">Missions</NavLink></li>
           <hr className='nav_line'></hr>
           <li><NavLink to="/myProfile" className="nav_profile">My Profile</NavLink></li>
