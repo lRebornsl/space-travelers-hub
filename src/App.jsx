@@ -8,8 +8,8 @@ const App = () => {
   return (
     <>
       <Header />
-      <Routes path="/rockets" element={<RocketsPage />}>
-        <Route path='/rockets' element={<RocketsPage />}/>
+      <Routes>
+        <Route exact path='/' element={<RocketsPage />}/>
         <Route path='/myProfile' element={<MyProfilePage />}/>
         <Route path='/missions' element={<MissionsPage />}/>
       </Routes>
