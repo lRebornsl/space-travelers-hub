@@ -18,7 +18,8 @@ const Missions = ({ name, description, index }) => {
 
 Missions.propTypes = {
   name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired
+  description: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired
 }
 
 export default Missions;
