@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Button from '../Button/Button';
 import './Rockets.css';
 
-const Rockets = ({ name, description, img, id }) => {
+const Rockets = ({ name, description, img }) => {
   return (
     <div className="rockets-container">
       <div className="rocket-card-container">
@@ -31,7 +31,6 @@ Rockets.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
 }
 
 export default Rockets;
