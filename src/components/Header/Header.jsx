@@ -6,14 +6,14 @@ const Header = () => {
   return (
     <header>
       <div>
-        <NavLink to="/rockets" id="logo">
+        <NavLink to="/" id="logo">
           <img src={logo} alt="logo" />
           <h1>Space Travelers&apos; Hub</h1>
         </NavLink>
       </div>
       <nav>
         <ul className='flex'>
-          <li><NavLink to="/rockets" className="nav_profile">Rockets</NavLink></li>
+          <li><NavLink to="/" className="nav_profile">Rockets</NavLink></li>
           <hr className='nav_line'></hr>
           <li><NavLink to="/missions" className="nav_profile">Missions</NavLink></li>
           <hr className='nav_line'></hr>
