@@ -1,15 +1,17 @@
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
-import MyProfile from './components/MyProfile/MyProfile';
-import Missions from './components/Missions/Missions';
+import MyProfilePage from './pages/MyProfilePage/MyProfilePage';
+import MissionsPage from './pages/MissionsPage/MissionsPage';
+import RocketsPage from './pages/RocketsPage/RocketsPage';
 
 const App = () => {
   return (
     <>
       <Header />
-      <Routes>
-        <Route path='/myProfile' element={<MyProfile />}/>
-        <Route path='/missions' element={<Missions />}/>
+      <Routes path="/rockets" element={<RocketsPage />}>
+        <Route path='/rockets' element={<RocketsPage />}/>
+        <Route path='/myProfile' element={<MyProfilePage />}/>
+        <Route path='/missions' element={<MissionsPage />}/>
       </Routes>
     </>
   )
