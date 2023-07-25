@@ -8,7 +8,7 @@
 }
 
 .rocket-img {
-  width: 200px;
+  width: 20rem;
 }
 
 .rocket-name {
@@ -16,11 +16,11 @@
 }
 
 .rocket-description {
-  font-size: 0.8rem;
+  font-size: 1.4rem;
   color: #484747;
   font-weight: 500;
 }
 
 .reserve-btn-container {
-  margin-top: 10px;
+  margin-top: 1rem;
 }

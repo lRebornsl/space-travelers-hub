@@ -14,7 +14,7 @@ const RocketsPage = () => {
 
 
   return (
-    <div>
+    <section className='container'>
       {rockets.map((rocket) => (
         <Rockets
           key = {uuid()} 
@@ -24,7 +24,7 @@ const RocketsPage = () => {
           id = {rocket.id}
         />
       ))}
-    </div>
+    </section>
   )
 }
 

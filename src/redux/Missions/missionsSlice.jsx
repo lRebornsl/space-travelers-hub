@@ -3,10 +3,10 @@ import axios from "axios";
 import { missionsURL } from "../../utils/constant";
 
 const initialState = {
-  missions: {}
+  missions: []
 };
 
-const getMissions = createAsyncThunk("missions/getMissions", () => {
+export const getMissions = createAsyncThunk("missions/getMissions", () => {
   return axios.get(missionsURL)
     .then(response => response.data)
 });
