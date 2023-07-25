@@ -1,4 +1,3 @@
-import React from 'react';
 import Rockets from '../../components/Rockets/Rockets';
 
 const RocketsPage = () => {
