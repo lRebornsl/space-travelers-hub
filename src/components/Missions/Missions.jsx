@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './Missions.css';
 
 const Missions = ({ name, description, index }) => {
@@ -13,6 +14,11 @@ const Missions = ({ name, description, index }) => {
       </div>
     </div>
   )
+}
+
+Missions.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
 }
 
 export default Missions;
