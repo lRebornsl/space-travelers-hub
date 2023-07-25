@@ -4,7 +4,7 @@ import './Rockets.css';
 
 const Rockets = ({ name, description, img }) => {
   return (
-    <div className="rockets-container">
+    <div className="container rockets-container">
       <div className="rocket-card-container">
         <div>
           <img src={img} alt="rocket image" className="rocket-img" />

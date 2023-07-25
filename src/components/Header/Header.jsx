@@ -4,7 +4,7 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <header>
+    <header className='container'>
       <div>
         <NavLink to="/" id="logo">
           <img src={logo} alt="logo" />
