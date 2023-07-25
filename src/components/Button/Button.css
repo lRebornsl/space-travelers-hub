@@ -1,0 +1,9 @@
+.reserve-btn {
+  background-color: #068FFF;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
