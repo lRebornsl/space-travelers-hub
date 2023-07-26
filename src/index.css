@@ -6,10 +6,12 @@
 
 /* Global */
 html {
+  font-size: 62.5%;
   box-sizing: border-box;
 }
 
 body {
+  font-size: 1.6rem;
   font-family: var(--poppins);
 }
 
@@ -24,6 +26,10 @@ body {
   box-sizing: inherit;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 /* Utilities */
 .container {
   max-width: 144rem;
@@ -33,4 +39,31 @@ body {
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 1fr;
+}
+
+.bg-gray {
+  background-color: #f2f2f2;
+}
+
+/* Missions */
+.flex-item {
+  flex: 1;
+  border: 0.1rem solid #d1d1d1;
+  padding: 1rem;
+}
+
+.flex-item-bigger {
+  flex: 4.5;
+  border: 0.1rem solid #d1d1d1;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+.mission-container {
+  padding: 2rem 0;
 }

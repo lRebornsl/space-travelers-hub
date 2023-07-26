@@ -1,7 +1,7 @@
 import { createAsyncThunk, createReducer } from '@reduxjs/toolkit';
-import URL from '../../utils/constant';
+import { URL } from '../../utils/constant';
 
-const FETCH_ROCKETS = 'rocketStore/rockets/FETCH_BOOKS';
+const FETCH_ROCKETS = 'rocketStore/rockets/FETCH_ROCKETS';
 
 export const fetchRockets = createAsyncThunk(FETCH_ROCKETS, async (post, { dispatch }) => {
   const response = await fetch(URL);
