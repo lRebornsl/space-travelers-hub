@@ -53,6 +53,8 @@
 - **Show rockets and missions**
 - **Book rockets**
 - **Join and cancel missions**
+- **Show missions stats**
+- **Show rockets stats**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
