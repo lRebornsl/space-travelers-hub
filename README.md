@@ -50,7 +50,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Show a react webpage**
+- **Show rockets and missions**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
