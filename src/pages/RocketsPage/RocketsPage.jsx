@@ -12,16 +12,12 @@ const RocketsPage = () => {
     dispatch(fetchRockets());
   }, [dispatch])
 
-
   return (
     <section className='container'>
       {rockets.map((rocket) => (
         <Rockets
-          key = {uuid()} 
-          name = {rocket.name}
-          description = {rocket.description}
-          img = {rocket.image}
-          id = {rocket.id}
+          key={uuid()} 
+          rocket={rocket}
         />
       ))}
     </section>
