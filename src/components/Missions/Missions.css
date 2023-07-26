@@ -19,3 +19,8 @@
   align-items: center;
   justify-content: center;
 }
+
+.leave-style {
+  outline: 0.1rem solid red;
+  color: red;
+}
