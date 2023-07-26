@@ -19,12 +19,9 @@
   font-size: 1.4rem;
   color: #484747;
   font-weight: 500;
+  margin-top: 10px;
 }
 
 .reserve-btn-container {
   margin-top: 1rem;
-}
-
-.rocket-description {
-  margin-top: 10px;
 }

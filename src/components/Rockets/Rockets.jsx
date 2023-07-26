@@ -27,7 +27,7 @@ const Rockets = ({ rocket }) => {
             <p className="rocket-name">{rocket.name}</p>
           </div>
           <div className="rocket-description">
-            <p className="rocket-description">
+            <p>
               {rocket.reserved && <Badge name="Reserved" />}
               {rocket.description}
             </p>
