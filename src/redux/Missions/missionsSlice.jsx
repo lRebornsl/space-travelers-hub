@@ -14,12 +14,31 @@ export const getMissions = createAsyncThunk("missions/getMissions", () => {
 const missionsSlice = createSlice({
   name: 'missions',
   initialState,
-  reducers: {},
+  reducers: {
+    join: (state, action) => {
+      state.missions = state.missions.map(mission => {
+        if(mission.mission_id !== action.payload) 
+          return mission;
+        return { ...mission, reserved: true };
+      });
+    },
+    leave: (state, action) => {
+      state.missions = state.missions.map(mission => {
+        if(mission.mission_id !== action.payload) 
+          return mission;
+        return { ...mission, reserved: false };
+      });
+    }
+  },
   extraReducers: {
     [getMissions.fulfilled]: (state, action) => {
-      state.missions = action.payload;
+      if(state.missions.length === 0) {
+        state.missions = action.payload;
+      }
     }
   }
 });
+
+export const { join, leave } = missionsSlice.actions;
 
 export default missionsSlice.reducer;

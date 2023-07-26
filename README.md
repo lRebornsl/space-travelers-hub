@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="./src/assets/planet_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="./src/assets/planet_logo_color.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>SPACE TRAVELERS' HUB</b></h3>
@@ -50,7 +50,11 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Show a react webpage**
+- **Show rockets and missions**
+- **Book rockets**
+- **Join and cancel missions**
+- **Show missions stats**
+- **Show rockets stats**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,8 +131,7 @@ Example command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Make a better UI.**
-- [ ] **Build new sections.**
+- [ ] **Improve UI**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
