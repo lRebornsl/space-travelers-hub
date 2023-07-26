@@ -16,7 +16,7 @@ const MissionsPage = () => {
     <section className='container mission-container'>
       <div className='flex flex-container'>
         <h3 className='flex-item'>Mission</h3>
-        <h3 className='flex-item-bigger'>Description</h3>
+        <h3 className='flex-item-bigger title-description'>Description</h3>
         <h3 className='flex-item'>Status</h3>
         <h3 className='flex-item'></h3>
       </div>
@@ -27,6 +27,7 @@ const MissionsPage = () => {
           name={mission.mission_name}
           description={mission.description}
           index={index}
+          reserved={mission.reserved}
         />
       ))}
     </section>

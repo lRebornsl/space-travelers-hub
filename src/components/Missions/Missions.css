@@ -19,3 +19,13 @@
   align-items: center;
   justify-content: center;
 }
+
+.leave-style {
+  outline: 0.1rem solid red;
+  color: red;
+}
+
+.active-style {
+  background-color: #18a2b8;
+  font-weight: normal;
+}
