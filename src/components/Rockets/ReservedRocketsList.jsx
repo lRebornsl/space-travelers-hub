@@ -6,7 +6,7 @@ const ReservedRocketsList = () => {
 
   return (
     <div>
-      <h2 className='profile-titles'>My Rockets</h2>
+      <h2>My Rockets</h2>
       {reservedRockets.length === 0 ? (
         <p>No rockets reserved yet.</p>
       ) : (
