@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { reserveRocket, cancelReservation } from '../../redux/Rockets/rocketsSlice';
 import Button from '../Button/Button';
+import Badge from '../Badge/Badge';
 import './Rockets.css';
 
 const Rockets = ({ rocket }) => {
@@ -25,8 +26,11 @@ const Rockets = ({ rocket }) => {
           <div>
             <p className="rocket-name">{rocket.name}</p>
           </div>
-          <div>
-            <p className="rocket-description">{rocket.description}</p>
+          <div className="rocket-description">
+            <p>
+              {rocket.reserved && <Badge name="Reserved" />}
+              {rocket.description}
+            </p>
           </div>
           <div className="reserve-btn-container">
             {rocket.reserved ? (
