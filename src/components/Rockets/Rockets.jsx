@@ -1,18 +1,19 @@
 import PropTypes from 'prop-types';
-import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { reserveRocket } from '../../redux/Rockets/rocketsSlice';
+import { reserveRocket, cancelReservation } from '../../redux/Rockets/rocketsSlice';
 import Button from '../Button/Button';
 import './Rockets.css';
 
 const Rockets = ({ rocket }) => {
   const dispatch = useDispatch();
+  
   const handleReserveClick = () => {
-    dispatch(reserveRocket(rocket.id))
+    if (rocket.reserved) {
+      dispatch(cancelReservation(rocket.id))
+    } else {
+      dispatch(reserveRocket(rocket.id))
+    }
   }
-  useEffect(() => {
-    console.log('Updated rocket.reserved:', rocket.reserved);
-  }, [rocket.reserved]);
 
   return (
     <div className="rockets-container">
@@ -29,9 +30,17 @@ const Rockets = ({ rocket }) => {
           </div>
           <div className="reserve-btn-container">
             {rocket.reserved ? (
-              <Button name="Cancel Reservation" onclick={() => "canceled"}/>
+              <Button
+                name="Cancel Reservation"
+                onclick={handleReserveClick}
+                stylename="cancel-reserve-btn"
+              />
             ) : (
-              <Button name="Reserve Rocket" onclick={handleReserveClick} />
+              <Button
+                name="Reserve Rocket"
+                onclick={handleReserveClick}
+                stylename="reserve-btn"
+              />
             ) }
           </div>
         </div>

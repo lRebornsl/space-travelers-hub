@@ -3,6 +3,7 @@ import { URL } from '../../utils/constant';
 
 const FETCH_ROCKETS = 'rocketStore/rockets/FETCH_ROCKETS';
 const RESERVE_ROCKET = 'rocketStore/rockets/RESERVE_ROCKETS';
+const CANCEL_RESERVATION = 'rocketStore/rockets/CANCEL_RESERVATIONS';
 
 export const fetchRockets = createAsyncThunk(FETCH_ROCKETS, async (post, { dispatch }) => {
   const response = await fetch(URL);
@@ -27,20 +28,35 @@ export const reserveRocket = (rocketId) => ({
   payload: rocketId,
 });
 
+export const cancelReservation = (rocketId) => ({
+  type: CANCEL_RESERVATION,
+  payload: rocketId,
+})
+
 const initialState = {
   rockets: [],
 }
 
 const rocketsSlice = createReducer(initialState, (builder) => {
   builder
-    .addCase(fetchRockets.fulfilled, (state, { payload }) => ({
-    ...state,
-    rockets: [...payload],
-    }))
+    .addCase(fetchRockets.fulfilled, (state, { payload }) => {
+      if (state.rockets.length === 0) {
+        return {
+          ...state,
+          rockets: [...payload],
+        }
+      }
+    })
     .addCase(RESERVE_ROCKET, (state, { payload: rocketId }) => ({
       ...state,
       rockets: state.rockets.map((rocket) =>
         rocket.id !== rocketId ? rocket : { ...rocket, reserved: true }
+      ),
+    }))
+    .addCase(CANCEL_RESERVATION, (state, { payload: rocketId }) => ({
+      ...state,
+      rockets: state.rockets.map((rocket) =>
+        rocket.id !== rocketId ? rocket : { ...rocket, reserved: false }
       ),
     }));
 })
