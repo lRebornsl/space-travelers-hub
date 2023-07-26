@@ -6,8 +6,9 @@
 }
 
 #reserved-container h2 {
-  font-weight: 600;
+  font-weight: normal;
   color: #484747;
+  padding-bottom: 1rem;
 }
 
 #reserved-container li {
