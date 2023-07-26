@@ -20,7 +20,7 @@ const Missions = ({ id, name, description, index, reserved }) => {
       <h3 className='flex-item'>{name}</h3>
       <p className='flex-item-bigger'>{description}</p>
       <div className='flex-item flex div-item'>
-        <h3 className='member-item'>NOT A MEMBER</h3>
+        <h3 className={`member-item ${ reserved ? "active-style" : "" }`}>NOT A MEMBER</h3>
       </div>
       <div className='flex-item flex div-item'>
         <button className={`flex-item mission-button ${ reserved ? "leave-style" : "" }`} onClick={(e) => handleJoin(e, id)}>{ reserved ? "Leave mission" : "Join Mission" }</button>
