@@ -26,9 +26,11 @@ const Missions = ({ id, name, description, index, reserved }) => {
 }
 
 Missions.propTypes = {
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  index: PropTypes.number.isRequired
+  index: PropTypes.number.isRequired,
+  reseverd: PropTypes.bool.isRequired
 }
 
 export default Missions;

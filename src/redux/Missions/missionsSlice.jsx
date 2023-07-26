@@ -25,7 +25,7 @@ const missionsSlice = createSlice({
   },
   extraReducers: {
     [getMissions.fulfilled]: (state, action) => {
-      if(state.missions.length === 0){
+      if(state.missions.length === 0) {
         state.missions = action.payload;
       }
     }
