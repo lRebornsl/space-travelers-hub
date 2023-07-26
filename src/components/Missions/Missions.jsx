@@ -1,14 +1,18 @@
 import PropTypes from 'prop-types';
 import './Missions.css';
 import { useDispatch } from 'react-redux';
-import { join } from '../../redux/Missions/missionsSlice';
+import { join, leave } from '../../redux/Missions/missionsSlice';
 
 const Missions = ({ id, name, description, index, reserved }) => {
   const dispatch = useDispatch();
 
   const handleJoin = (e, id) => {
     e.preventDefault();
-    dispatch(join(id));
+    if(reserved){
+      dispatch(leave(id))
+    } else {
+      dispatch(join(id));
+    }
   }
 
   return(
