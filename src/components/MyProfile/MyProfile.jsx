@@ -1,10 +1,11 @@
+import ActiveMissionsList from '../Missions/ActiveMissionsList';
 import ReservedRocketsList from '../Rockets/ReservedRocketsList';
 import './MyProfile.css';
 
 const MyProfile = () => (
   <div>
     <div id="reserved-container" className="container">
-      <div>My Missions</div>
+      <ActiveMissionsList />
       <ReservedRocketsList />
     </div>
   </div>
