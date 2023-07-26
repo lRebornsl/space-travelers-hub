@@ -51,6 +51,8 @@
 ### Key Features <a name="key-features"></a>
 
 - **Show rockets and missions**
+- **Book rockets**
+- **Join and cancel missions**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,7 +130,7 @@ Example command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Make a better UI.**
-- [ ] **Build new sections.**
+- [ ] **Add more features.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
