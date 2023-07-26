@@ -2,7 +2,6 @@ import { useSelector } from 'react-redux';
 
 const ReservedRocketsList = () => {
   const rockets = useSelector((state) => state.rocketsSlice.rockets);
-  console.log(rockets)
   const reservedRockets = rockets.filter((rocket) => rocket.reserved);
 
   return (
