@@ -30,7 +30,7 @@ Missions.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   index: PropTypes.number.isRequired,
-  reseverd: PropTypes.bool.isRequired
+  reserved: PropTypes.bool.isRequired
 }
 
 export default Missions;
