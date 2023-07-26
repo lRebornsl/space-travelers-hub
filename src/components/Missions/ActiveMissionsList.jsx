@@ -6,7 +6,7 @@ const ActiveMissionsList = () => {
 
   return (
     <div>
-      <h2>My Missions</h2>
+      <h2 className='profile-titles'>My Missions</h2>
       {activeMissions.length === 0 ? (
         <p>No active missions yet.</p>
       ) : (
