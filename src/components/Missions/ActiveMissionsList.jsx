@@ -7,8 +7,8 @@ const ActiveMissionsList = () => {
   return (
     <div>
       <h2>My Rockets</h2>
-      {reservedRockets.length === 0 ? (
-        <p>No rockets reserved yet.</p>
+      {activeMissions.length === 0 ? (
+        <p>No active missions yet.</p>
       ) : (
         <ul>
           {activeMissions.map(mission => (
