@@ -39,10 +39,14 @@ const initialState = {
 
 const rocketsSlice = createReducer(initialState, (builder) => {
   builder
-    .addCase(fetchRockets.fulfilled, (state, { payload }) => ({
-    ...state,
-    rockets: [...payload],
-    }))
+    .addCase(fetchRockets.fulfilled, (state, { payload }) => {
+      if (state.rockets.length === 0) {
+        return {
+          ...state,
+          rockets: [...payload],
+        }
+      }
+    })
     .addCase(RESERVE_ROCKET, (state, { payload: rocketId }) => ({
       ...state,
       rockets: state.rockets.map((rocket) =>

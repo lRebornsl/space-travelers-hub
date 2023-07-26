@@ -5,12 +5,13 @@ import { fetchRockets } from '../../redux/Rockets/rocketsSlice'
 import Rockets from '../../components/Rockets/Rockets';
 
 const RocketsPage = () => {
-  const rockets = useSelector((state) => state.rocketsSlice.rockets);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchRockets());
   }, [dispatch])
+
+  const rockets = useSelector((state) => state.rocketsSlice.rockets);
 
   return (
     <section className='container'>

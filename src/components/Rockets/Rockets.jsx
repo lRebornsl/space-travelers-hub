@@ -6,6 +6,7 @@ import './Rockets.css';
 
 const Rockets = ({ rocket }) => {
   const dispatch = useDispatch();
+  
   const handleReserveClick = () => {
     if (rocket.reserved) {
       dispatch(cancelReservation(rocket.id))
@@ -13,9 +14,6 @@ const Rockets = ({ rocket }) => {
       dispatch(reserveRocket(rocket.id))
     }
   }
-  // useEffect(() => {
-  //   console.log('Updated rocket.reserved:', rocket.reserved);
-  // }, [rocket.reserved]);
 
   return (
     <div className="rockets-container">
