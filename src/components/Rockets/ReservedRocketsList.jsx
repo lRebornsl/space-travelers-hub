@@ -7,17 +7,19 @@ const ReservedRocketsList = () => {
   return (
     <div>
       <h2>My Rockets</h2>
-      {reservedRockets.length === 0 ? (
-        <p>No rockets reserved yet.</p>
-      ) : (
-        <ul>
-          {reservedRockets.map((rocket) => (
-            <li key={rocket.id}>
-              {rocket.name}
-            </li>
-          ))}
-        </ul>
-      )}
+      <div className='profiles-container'>
+        {reservedRockets.length === 0 ? (
+          <p>No rockets reserved yet.</p>
+        ) : (
+          <ul>
+            {reservedRockets.map((rocket) => (
+              <li key={rocket.id}>
+                {rocket.name}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
     </div>
   )
 }
