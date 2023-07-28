@@ -21,6 +21,7 @@
   - [Setup](#setup)
   - [Install](#install)
   - [Usage](#usage)
+  - [Run tests](#run-tests)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -96,6 +97,16 @@ Example command:
 
 ```sh
   npm run dev
+```
+
+### Run tests
+
+To run tests, run the following command:
+
+Example command:
+
+```sh
+  npm test
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
