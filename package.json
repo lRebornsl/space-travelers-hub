@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "test": "vitest \"node_modules/(?!axios)/\"",
+    "test": "vitest",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -21,6 +21,7 @@
     "react-redux": "^8.1.1",
     "react-router-dom": "^6.14.2",
     "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.4.2",
     "sort-by": "^1.2.0",
     "uuid": "^9.0.0"
   },
@@ -41,6 +42,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "jest": "^29.6.2",
+    "jsdom": "^22.1.0",
+    "redux-mock-store": "^1.5.4",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
