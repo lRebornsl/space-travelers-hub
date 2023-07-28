@@ -1,7 +1,6 @@
-import React from 'react';
-import { getByText, render, waitFor } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
 import ActiveMissionsList from '../components/Missions/ActiveMissionsList';
-import { beforeEach, describe, it } from 'vitest';
+import { beforeEach, describe, it, expect } from 'vitest';
 import { Provider } from 'react-redux';
 import store from '../redux/Store';
 
