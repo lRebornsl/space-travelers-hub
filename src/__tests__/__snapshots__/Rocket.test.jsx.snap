@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Badge component > Rocket Page renders correctly into the DOM 1`] = `
+<section
+  className="container"
+/>
+`;
