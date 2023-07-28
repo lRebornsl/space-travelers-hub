@@ -20,7 +20,7 @@ const Rockets = ({ rocket }) => {
     <div className="rockets-container">
       <div className="rocket-card-container">
         <div>
-          <img src={rocket.image} alt="rocket image" className="rocket-img" />
+          <img src={rocket.image} alt="rocket" className="rocket-img" />
         </div>
         <div className="rocket-info-container">
           <div>
