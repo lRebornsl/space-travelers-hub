@@ -1,0 +1,19 @@
+.reserve-btn,
+.cancel-reserve-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.reserve-btn {
+  background-color: #068fff;
+  color: #fff;
+}
+
+.cancel-reserve-btn {
+  background-color: #fff;
+  color: #838383;
+  border: 1px solid #838383;
+}

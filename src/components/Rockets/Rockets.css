@@ -1,0 +1,27 @@
+.rockets-container {
+  padding: 1rem 2rem;
+}
+
+.rocket-card-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.rocket-img {
+  width: 22rem;
+}
+
+.rocket-name {
+  font-weight: 600;
+}
+
+.rocket-description {
+  font-size: 1.4rem;
+  color: #484747;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.reserve-btn-container {
+  margin-top: 1rem;
+}

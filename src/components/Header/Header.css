@@ -1,0 +1,41 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d1d1d1;
+  padding: 1.2rem 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #4ba0ff;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: black;
+}
+
+#logo img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.nav_profile {
+  margin: 0 1.6rem;
+}
+
+.nav_profile.active,
+.nav_profile.active:visited {
+  text-decoration: underline;
+}
