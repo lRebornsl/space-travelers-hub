@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Missions > Missions renders correctly 1`] = `[Function]`;
+
+exports[`Missions > Rocket Page 1`] = `
+<section
+  className="container"
+/>
+`;
+
+exports[`Missions > Rocket Page renders correctly into the DOM 1`] = `
+<section
+  className="container"
+/>
+`;

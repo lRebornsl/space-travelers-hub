@@ -1,0 +1,5 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Active Missions List > ActiveMissionsList renders correctly 1`] = `[Function]`;
+
+exports[`Active Missions List > ReservedRocketsList renders correctly 1`] = `[Function]`;
